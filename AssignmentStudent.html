@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="d1"></div>
+	<div id="d2"></div>
+	<div id="d3"></div>
+       
+       <script>
+       var student = 
+       {
+            physics: 78,
+            Math: 75,
+            chemistry: 90,
+
+            display: function ()
+            {
+                return "physics ="+ this.physics + " Math =" + this.Math + " chemistry =" + this.chemistry;
+            },
+            calculation: function ()
+            {
+                let total;
+                total = this.physics + this.Math + this.chemistry;
+                return total;
+            },
+
+            Percentage: function()
+            {
+                var percent;
+                percent=(243 / 300) * 100;
+                return percent;
+
+            },
+        }
+          document.getElementById("d1").innerHTML = student.display();
+          document.getElementById("d2").innerHTML = student.calculation();
+          document.getElementById("d3").innerHTML = student.Percentage();
+
+</script>
+
+</body>
+</html>

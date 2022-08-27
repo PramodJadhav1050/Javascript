@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	 <div id="d1"></div>
+    <div id="d2"></div>
+       
+       <script>
+       var product = {
+            pid: 11,
+            pname: "Laptop",
+            price: 50000,
+            display: function () {
+            return "pid ="+ this.pid + " product name =" + this.pname + " price =" + this.price;
+            },
+             discount: function () {
+                var result;
+                result = this.price * 0.10;
+                return result;
+            }
+        }
+        document.getElementById("d1").innerHTML = product.display();
+        document.getElementById("d1").innerHTML = product.discount();
+</script>
+</body>
+</html>

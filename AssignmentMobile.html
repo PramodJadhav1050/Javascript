@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	
+	 <div id="d1"></div>
+	 <div id="d2"></div>
+       
+       <script>
+       var mobile =
+        {
+            camera:48 ,
+            ram: 8 ,
+            price: 15000,
+            display: function () 
+            {
+                return "camera ="+ this.camera + " Ram =" + this.ram + " Price =" + this.price;
+            },
+             Discount: function () 
+            {
+                var result;
+                result = this.price * 0.10;
+                return result;
+            }
+        }
+        document.getElementById("d1").innerHTML = mobile.display();
+        document.getElementById("d2").innerHTML = mobile.Discount();
+
+</script>
+
+</body>
+</html>
