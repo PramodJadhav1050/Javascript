@@ -25,14 +25,14 @@
             {
                 let total;
                 total = this.physics + this.Math + this.chemistry;
-                return total;
+                return "Total=" +total;
             },
 
             Percentage: function()
             {
                 var percent;
-                percent=(243 / 300) * 100;
-                return percent;
+                percent=((this.physics + this.Math + this.chemistry)/ 300) * 100;
+                return "percentage=" +percent;
 
             },
         }
